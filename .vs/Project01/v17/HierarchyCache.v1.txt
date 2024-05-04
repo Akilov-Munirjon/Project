@@ -1,0 +1,264 @@
+﻿++Решение "Project01" ‎(проекты: 1 из 1)
+i:{00000000-0000-0000-0000-000000000000}:Project01.sln
+++Project01
+i:{00000000-0000-0000-0000-000000000000}:Project01
+++Connected Services 
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>25
+++PostgreSQL
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>477
+++База данных SQL Server
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>481
+++Платформа удостоверений Майкрософт
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>479
+++Properties
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\properties\
+++launchSettings.json
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\properties\launchsettings.json
+++Зависимости
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>24
+++Анализаторы
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:анализаторы
+++Пакеты
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:пакеты
+++AutoMapper (13.0.1)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>409
+++FluentValidation (11.9.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>410
+++MediatR (7.0.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>147
+++Microsoft.AspNetCore.Mvc.Versioning (5.1.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>317
+++Microsoft.EntityFrameworkCore (7.0.1)
+++Microsoft.EntityFrameworkCore.Tools (7.0.1)
+++Npgsql.EntityFrameworkCore.PostgreSQL (7.0.1)
+++Swashbuckle.AspNetCore (6.2.3)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>37
+++Swashbuckle.AspNetCore.Swagger (6.5.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>143
+++Swashbuckle.AspNetCore.SwaggerUI (6.5.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>144
+++System.IdentityModel.Tokens.Jwt (7.0.1)
+++Платформы
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:платформы
+++Application
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\
+++Features
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\
+++Disks
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\
+++Commands
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\
+++CreateDisk
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\createdisk\
+++CreateDiskCommand.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\createdisk\creatediskcommand.cs
+++CreateDiskCommandHandler.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\createdisk\creatediskcommandhandler.cs
+++CreateDiskCommandValidator.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\createdisk\creatediskcommandvalidator.cs
+++CreateDiskMapper.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\createdisk\creatediskmapper.cs
+++DeleteDisk
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\deletedisk\
+++DeleteDiskCommand.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\deletedisk\deletediskcommand.cs
+++DeleteDiskCommandHandler.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\deletedisk\deletediskcommandhandler.cs
+++DeleteDiskCommandValidation.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\deletedisk\deletediskcommandvalidation.cs
+++DeleteDiskMapper.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\deletedisk\deletediskmapper.cs
+++UpdateDisk
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\updatedisk\
+++UpdateDiskCommand.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\updatedisk\updatediskcommand.cs
+++UpdateDiskCommandHandler.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\updatedisk\updatediskcommandhandler.cs
+++UpdateDiskCommandValidation.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\updatedisk\updatediskcommandvalidation.cs
+++UpdateDiskMapper.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\commands\updatedisk\updatediskmapper.cs
+++Core
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\
+++Comman
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\
+++Configurations
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\configurations\
+++SwaggerBasicAuthConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\configurations\swaggerbasicauthconfiguration.cs
+++Exceptions
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\exceptions\
+++NullDataException.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\exceptions\nulldataexception.cs
+++Extensions
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\extensions\
+++ErrorHandler
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\extensions\errorhandler\
+++ErrorHandlerExtension.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\extensions\errorhandler\errorhandlerextension.cs
+++Middlewares
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\extensions\middlewares\
+++ErrorMiddleware.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\comman\extensions\middlewares\errormiddleware.cs
+++Swaggers
+++Controllers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\controllers\
+++DiskController.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\controllers\diskcontroller.cs
+++WeatherForecastController.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\core\controllers\weatherforecastcontroller.cs
+++Domain
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\
+++Common
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\
+++BaseEntities
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\baseentities\
+++BaseEntity.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\baseentities\baseentity.cs
+++Entities
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\
+++Disk.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\disk.cs
+++DiskType.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\disktype.cs
+++Equipment.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\equipment.cs
+++Order.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\order.cs
+++Service.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\service.cs
+++ServicesEquipment.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\servicesequipment.cs
+++Tire.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\tire.cs
+++TireType.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\tiretype.cs
+++User.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\domain\common\entities\user.cs
+++Infrastructure
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\
+++DiskConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\diskconfiguration.cs
+++DiskTypeConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\disktypeconfiguration.cs
+++EquipmentsConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\equipmentsconfiguration.cs
+++OrderConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\orderconfiguration.cs
+++ServiceConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\serviceconfiguration.cs
+++ServicesEquipmentsConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\servicesequipmentsconfiguration.cs
+++TireConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\tireconfiguration.cs
+++TireTypeConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\tiretypeconfiguration.cs
+++UserConfiguration.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\configurations\userconfiguration.cs
+++Context
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\context\
+++ApplicationDbContext.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\context\applicationdbcontext.cs
+++Migrations
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\migrations\
+++ServiceCollection.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\infrastructure\servicecollection.cs
+++appsettings.json
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\appsettings.json
+++appsettings.Development.json
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\appsettings.development.json
+++Program.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\program.cs
+++WeatherForecast.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\weatherforecast.cs
+++Обнаружена зависимость PostgreSQL.
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>478
+++Обнаружена зависимость База данных SQL Server.
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>482
+++Для приложений, которые проводят проверку пользователей с помощью платформы удостоверений Майкрософт (Azure AD, Azure AD B2C и личные учетные записи Microsoft).
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>480
+++Microsoft.AspNetCore.Analyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\.nuget\packages\microsoft.entityframeworkcore.analyzers\7.0.1\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.2\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\sdk\6.0.200\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.2\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore.Tools (6.0.20)
+++Microsoft.EntityFrameworkCore.Tools (7.0.0)
+++Microsoft.EntityFrameworkCore.Tools (6.0.1)
+++Microsoft.EntityFrameworkCore.Tools (6.0.26)
+++Microsoft.EntityFrameworkCore.Tools (6.0.27)
+++Microsoft.EntityFrameworkCore.Design (7.0.0)
+++Npgsql.EntityFrameworkCore.PostgreSQL (6.0.7)
+++Microsoft.EntityFrameworkCore.Tools (6.0.7)
+++Microsoft.EntityFrameworkCore (6.0.7)
+++Microsoft.EntityFrameworkCore (6.0.28)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>590
+++Microsoft.EntityFrameworkCore.Tools (6.0.28)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>591
+++Npgsql.EntityFrameworkCore.PostgreSQL (6.0.22)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>592
+++System.IdentityModel.Tokens.Jwt (6.35.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>593
+++20240403103553_InitTables.cs
+++ApplicationDbContextModelSnapshot.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\migrations\applicationdbcontextmodelsnapshot.cs
+++20240403103553_InitTables.Designer.cs
+++20240403103731_InitTables.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\migrations\20240403103731_inittables.cs
+++20240403103731_InitTables.Designer.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\migrations\20240403103731_inittables.designer.cs
+++Новая папка
+++Query
+++Queries
+++GetAllDisk
+++GetAllDisks
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\getalldisks\
+++Get
+++GetDiskDetails
+++GetDiskType
+++GetDiskDetail
+++Class.cs
+++GetAllDiskMapper.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\getalldisks\getalldiskmapper.cs
+++GetAllCamerasQuery.cs
+++GetAllCamerasQueryHandler.cs
+++GetAllDiskViewModel.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\getalldisks\getalldiskviewmodel.cs
+++GetAllDisksQuery.cs
+++GetAllDisksMapper.cs
+++GetAllDisksViewModel.cs
+++GetAllDisksQueryHandler.cs
+++SwaggerExtension.cs
+++Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer (5.1.0)
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:>645
+++GetAllDiskQuery.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\getalldisks\getalldiskquery.cs
+++GetAllQueryhandler.cs
+++GetAllDisksQueryhandler.cs
+++GetAllDisksQuery1.cs
+++GetAllDiskQueryHandler.cs
+i:{7d9f5865-27e9-4150-97fc-261cf06974bb}:c:\users\stajor\source\repos\project01\project01\application\features\disks\getalldisks\getalldiskqueryhandler.cs
