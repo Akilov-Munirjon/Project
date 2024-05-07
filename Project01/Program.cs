@@ -1,5 +1,7 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.OpenApi.Models;
 using Project01.Core.Common.Extensions.Swaggers;
+using Project01.Domain.Entities;
 using Project01.Infrastructure;
 using System.Reflection;
 
@@ -24,7 +26,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Your API Name V1");
 });
-    
+
+
 
 app.UseHttpsRedirection();
 app.UseRouting();

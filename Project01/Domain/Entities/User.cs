@@ -11,5 +11,9 @@ namespace Project01.Domain.Entities
         public string Password { get; set; }
 
         public ICollection<Order> Orders { get; set; }
+        public string Username { get; set; }
+        public string PasswordHash { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime LastPasswordChangeDate { get; set; }
     }
 }
