@@ -1,23 +1,35 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
+﻿using Microsoft.AspNetCore.Http;
+using Project01.Application.Tokens;
+using System.Linq;
+using System.Threading.Tasks;
 
-public class AuthFilter : IAuthorizationFilter
+public class AuthorizationFilter
 {
-    private readonly IMemoryCache _cache;
+    private readonly RequestDelegate _next;
+    private readonly TokenService _tokenService;
 
-    public AuthFilter(IMemoryCache cache)
+    public AuthorizationFilter(RequestDelegate next, TokenService tokenService)
     {
-        _cache = cache;
+        _next = next;
+        _tokenService = tokenService;
     }
 
-    public void OnAuthorization(AuthorizationFilterContext context)
+    public async Task Invoke(HttpContext context)
     {
-        var token = context.HttpContext.Request.Headers["Authorization"].FirstOrDefault();
+        var token = context.Request.Headers[_tokenService.HeaderName].FirstOrDefault();
 
-        if (string.IsNullOrEmpty(token) || !_cache.TryGetValue(token, out _))
+        if (string.IsNullOrEmpty(token))
         {
-            context.Result = new UnauthorizedResult();
+            context.Response.StatusCode = 401;
+            return;
         }
+
+        if (!TokenValidator.Validate(token))
+        {
+            context.Response.StatusCode = 403;
+            return;
+        }
+
+        await _next(context);
     }
 }
