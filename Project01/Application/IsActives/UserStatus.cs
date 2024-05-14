@@ -1,6 +1,6 @@
 ﻿namespace Project01.Application.IsActives
 {
-    public class UserData
+    public class UserStatus
     {
         public bool IsActive { get; set; }
         public DateTime AuthenticatedTime { get; set; }

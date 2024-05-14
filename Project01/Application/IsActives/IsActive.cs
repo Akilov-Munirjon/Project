@@ -4,22 +4,22 @@ namespace Project01.Application.IsActives
 {
     public class IsActive
     {
-        private readonly UserManager<IdentityUser> _userManager;
+        private readonly UserStatus<IdentityUser> _userStatus;
 
-        public IsActive(UserManager<IdentityUser> userManager)
+        public IsActive(UserStatus<IdentityUser> _userStatus)
         {
-            _userManager = userManager;
+            _userStatus = _userStatus;
         }
 
         public async Task<bool> AuthenticateUserAsync(string username, string password)
         {
-            var user = await _userManager.FindByNameAsync(username);
+            var user = await _userStatus.FindByNameAsync(username);
 
-            if (user != null && await _userManager.CheckPasswordAsync(user, password))
+            if (user != null && await _userStatus.CheckPasswordAsync(user, password))
             {
                 if (user.IsActive)
                 {
-                    var passwordChangedDate = await _userManager.GetPasswordChangeDateAsync(user);
+                    var passwordChangedDate = await _userStatus.GetPasswordChangeDateAsync(user);
                     if (passwordChangedDate.HasValue && (DateTime.Now - passwordChangedDate.Value).TotalDays > 30)
                     {
                         return false;

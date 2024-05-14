@@ -28,7 +28,7 @@ public class CustomAuthorizationFilter : IAuthorizationFilter
             return;
         }
 
-        var user = Newtonsoft.Json.JsonConvert.DeserializeObject<UserData>(userData);
+        var user = Newtonsoft.Json.JsonConvert.DeserializeObject<UserStatus>(userData);
         if (!user.IsActive)
         {
             context.Result = new ForbidResult();
