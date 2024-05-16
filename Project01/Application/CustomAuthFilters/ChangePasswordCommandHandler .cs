@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 
 
-namespace Project01.Application.AuthFilters
+namespace Project01.Application.CustomAuthFilters
 {
     public class ChangePasswordCommandHandler : IRequestHandler<ChangePasswordCommand, bool>
     {
@@ -19,7 +19,7 @@ namespace Project01.Application.AuthFilters
                 .FindByIdAsync(request.UserId) ?? throw new Exception("Пользователь не найден.");
 
             var result = await _userStatus.ChangePasswordAsync(user, request.NewPassword, request.NewPassword);
-           
+
             return result.Succeeded;
         }
     }
