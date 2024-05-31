@@ -1,29 +1,40 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Project01.Application.IsActives;
+using Project01.Application.CustomAuthFilters;
+using Project01.Application.Models;
+using Project01.Domain.Filters;
 
 namespace Project01.Core.Controllers
 {
-    public class AuthController : Controller
+    [ApiController]
+    [Route("api/v{version:apiVersion}/[controller]")]
+    public class AccountController : ControllerBase
     {
-        private readonly UserStatus _userStatus;
+        private readonly UserService _userService;
 
-        public AuthController(UserStatus _userStatus)
+        public AccountController(UserService userService)
         {
-            this._userStatus = _userStatus;
+            _userService = userService;
         }
 
-        [HttpPost]
-        public IActionResult Login(string username, string password)
+        [HttpPost("Login")]
+        public IActionResult Login([FromBody] User request)
         {
-            if (_userStatus.IsValidUser(username, password))
+            if (_userService.ValidateUser(request.Login, request.Password))
             {
-                return RedirectToAction("Index", "Home");
+                return Ok("Авторизация успешна");
             }
-            else
-            {
-                return RedirectToAction("Login", "Auth");
-            }
+
+            return Unauthorized("Неверный логин или пароль, или срок действия пароля истек");
+        }
+
+        [HttpPost("ChangePassword")]
+        public IActionResult ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            _userService.ChangePassword(request.CurrentLogin, request.NewPassword);
+
+            return Ok("Пароль успешно изменен");
         }
     }
+   
 }
 

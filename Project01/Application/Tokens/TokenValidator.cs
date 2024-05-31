@@ -1,10 +1,15 @@
 ﻿namespace Project01.Application.Tokens
 {
-    public class TokenValidator
+    public static class TokenValidator
     {
         public static bool Validate(string token)
         {
-            return !string.IsNullOrEmpty(token);
+            if (string.IsNullOrWhiteSpace(token))
+            {
+                return false;
+            }
+
+            return token == "valid_token_example";
         }
     }
 }

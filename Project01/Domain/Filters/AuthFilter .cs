@@ -1,6 +1,6 @@
 ﻿using Project01.Application.Tokens;
 
-namespace Project01.Application.CustomAuthFilters
+namespace Project01.Domain.Filters
 {
     public class AuthorizationFilter
     {
@@ -21,16 +21,23 @@ namespace Project01.Application.CustomAuthFilters
             if (string.IsNullOrEmpty(token))
             {
                 context.Response.StatusCode = 401;
-                return;
+
+                return; 
             }
 
             if (!TokenValidator.Validate(token))
             {
                 context.Response.StatusCode = 403;
+
                 return;
             }
 
             await _next(context);
+        }
+
+        public class TokenService
+        {
+            public string HeaderName { get; } = "Authorization";
         }
     }
 }

@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc.Filters;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Caching.Memory;
-using Project01.Application.IsActives;
+using Project01.Application.CustomAuthFilters;
 
-namespace Project01.Application.CustomAuthFilters
+namespace Project01.Domain.Filters
 {
     public class CustomAuthorizationFilter : IAuthorizationFilter
     {
@@ -19,28 +19,26 @@ namespace Project01.Application.CustomAuthFilters
             if (!context.HttpContext.Request.Headers.ContainsKey("Custom-Token"))
             {
                 context.Result = new UnauthorizedResult();
-            
                 return;
             }
 
-            var token = context.HttpContext.Request.Headers["Custom-Token"];
+            var token = context.HttpContext.Request.Headers["Custom-Token"].ToString();
 
-            if (!_cache.TryGetValue(token, out string userData))
+            if (!_cache.TryGetValue(token, out User user))
             {
                 context.Result = new UnauthorizedResult();
                 return;
             }
 
-            var user = Newtonsoft.Json.JsonConvert.DeserializeObject<UserStatus>(userData);
             if (!user.IsActive)
             {
-                context.Result = new ForbidResult();
+                context.Result = new ForbidResult("Пользователь неактивен");
                 return;
             }
 
-            if (user.AuthenticatedTime.AddHours(1) < DateTime.Now)
+            if ((DateTime.UtcNow - user.LastPasswordChangeDate).TotalDays > 30)
             {
-                context.Result = new UnauthorizedResult();
+                context.Result = new ForbidResult("Требуется смена пароля");
                 return;
             }
         }
