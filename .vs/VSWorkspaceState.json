@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Project01",
+    "\\Project01\\Application",
+    "\\Project01\\Application\\Features",
+    "\\Project01\\Application\\Features\\Disks",
+    "\\Project01\\Application\\Features\\Disks\\Commands",
+    "\\Project01\\Application\\Features\\Disks\\Commands\\CreateDisk"
+  ],
+  "PreviewInSolutionExplorer": false
+}
