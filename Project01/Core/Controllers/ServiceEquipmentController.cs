@@ -1,9 +1,9 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Project01.Application.Features.ServicesEquipments.Commands.DeleteServicesEquipment;
-using Project01.Application.Features.ServicesEquipments.Commands.CreateServiceEquipment;
 using Project01.Application.Features.ServicesEquipments.Queries.GetServiceEquipments;
+using Project01.Application.Features.ServicesEquipments.Commands.CreateServiceEquipment;
 using Project01.Application.Features.ServicesEquipments.Commands.UpdateServiceEquipment;
+using Project01.Application.Features.ServicesEquipments.Commands.DeleteServicesEquipment;
 
 namespace Project01.Controllers
 {

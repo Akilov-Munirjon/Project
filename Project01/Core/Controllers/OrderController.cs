@@ -53,6 +53,7 @@ namespace Project01.Core.Controllers
         public async Task<IActionResult> UpdateOrder([FromBody] UpdateOrderCommand command)
         {
             await _mediator.Send(command);
+
             return Ok("Успешно изменен");
         }
 
@@ -62,6 +63,7 @@ namespace Project01.Core.Controllers
         public async Task<IActionResult> DeleteOrder(Guid id)
         {
             await _mediator.Send(new DeleteOrderCommand { Id = id });
+
             return Ok("Успешно удалён");
         }
 
