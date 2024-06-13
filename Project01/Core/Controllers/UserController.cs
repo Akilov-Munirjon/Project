@@ -4,12 +4,14 @@ using Project01.Application.Features.Users.Commands.CreateUser;
 using Project01.Application.Features.Users.Commands.DeleteUser;
 using Project01.Application.Features.Users.Commands.UpdateUser;
 using Project01.Application.Features.Users.Queries;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     [ApiVersion("1")]
     [Route("api/v{version:apiVersion}/[controller]")]
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;

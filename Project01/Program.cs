@@ -1,34 +1,14 @@
-using Project01.Core.Common.Extensions.Swaggers;
-using Project01.Infrastructure;
-using System.Reflection;
+using Project01.Core.Common;
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddMemoryCache();
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddApplicationLayer(builder.Configuration);
-builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-builder.Services.AddSwaggerConfiguration(builder.Configuration);
-builder.Services.AddApplicationPersistence(builder.Configuration);
+builder.Services.AddServices(builder.Configuration);
+builder.Services.AddConfigurations(builder.Configuration);
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-    app.UseSwaggerConfiguration();
-
-app.UseRouting();
-app.UseStaticFiles();
-app.UseAuthorization();
-app.UseHttpsRedirection();
-
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapControllers();
-});
-
-app.MapControllers();
+app.UseServices();
 
 app.Run();

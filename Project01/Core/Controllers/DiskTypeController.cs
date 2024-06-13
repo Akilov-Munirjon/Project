@@ -4,12 +4,13 @@ using Project01.Application.Features.DiskTypes.Commands.UpdateDiskType;
 using Project01.Application.Features.DiskTypes.Commands.DeleteDiskType;
 using Project01.Application.Features.DiskTypes.Commands;
 using Project01.Application.Features.DiskTypes.Queries.GetAllDikType;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class DiskTypeController : ControllerBase
     {
         private readonly IMediator _mediator;

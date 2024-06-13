@@ -4,11 +4,13 @@ using Project01.Application.Features.Equipments.Commands.CreateEquipment;
 using Project01.Application.Features.Equipments.Commands.DeleteEquipment;
 using Project01.Application.Features.Equipments.Commands.UpdateEquipment;
 using Project01.Application.Features.Equipments.Queries.GetAllEquipment;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class EquipmentController : ControllerBase
     {
         private readonly IMediator _mediator;

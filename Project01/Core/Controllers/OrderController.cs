@@ -5,13 +5,14 @@ using Project01.Application.Features.Orders.Commands.DeleteOrder;
 using Project01.Application.Features.Orders.Commands.UpdateOrder;
 using Project01.Application.Features.Orders.Queries.GetAllOrders;
 using Project01.Application.Features.Orders.Queries.GetOrderReport;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     [ApiVersion("1")]
     [Route("api/v{version:apiVersion}/[controller]")]
-
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class OrderController : ControllerBase
     {
         private readonly IMediator _mediator;

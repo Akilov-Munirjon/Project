@@ -4,12 +4,13 @@ using Project01.Application.Features.TireTypes.Queries.GetAllTireType;
 using Project01.Application.Features.TireTypes.Commands.CreateTireType;
 using Project01.Application.Features.TireTypes.Commands.UpdateTireType;
 using Project01.Application.Features.TireTypes.Commands.DeleteTireType;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
-
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class TireTypeController : ControllerBase
     {
         private readonly IMediator _mediator;

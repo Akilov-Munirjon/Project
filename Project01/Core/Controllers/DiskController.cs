@@ -3,13 +3,14 @@ using Microsoft.AspNetCore.Mvc;
 using Project01.Application.Features.Disks.Commands.DeleteDisk;
 using Project01.Application.Features.Disks.Commands.UpdateDisk;
 using Project01.Application.Features.Disks.Queries.GetAllDisks;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Core.Controllers
 {
     [ApiController]
     //[ApiVersion("1")]
     [Route("api/v{version:apiVersion}/[controller]")]
-
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class DiskController : ControllerBase
     {
         private readonly IMediator _mediator;

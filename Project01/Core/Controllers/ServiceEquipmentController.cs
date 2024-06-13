@@ -4,11 +4,13 @@ using Project01.Application.Features.ServicesEquipments.Queries.GetServiceEquipm
 using Project01.Application.Features.ServicesEquipments.Commands.CreateServiceEquipment;
 using Project01.Application.Features.ServicesEquipments.Commands.UpdateServiceEquipment;
 using Project01.Application.Features.ServicesEquipments.Commands.DeleteServicesEquipment;
+using Project01.Core.Common.Filters;
 
 namespace Project01.Controllers
 {
     [ApiController]
     [Route("api/v{version:apiVersion}/[controller]")]
+    [TypeFilter(typeof(UserAutentificationFilter))]
     public class ServiceEquipmentController : ControllerBase
     {
         private readonly IMediator _mediator;
